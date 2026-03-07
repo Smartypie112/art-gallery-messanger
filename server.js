@@ -117,8 +117,10 @@ app.post("/select-images", async (req, res) => {
       await client.messages.create({
         from: process.env.TWILIO_WHATSAPP_FROM,
         to: whatsappNumber,
-        body: `Congrats! Your 2 artworks are selected for the 2nd round. 
-Please pay ₹500 by this link: https://dummy-payment-link.com`,
+        body: `Congrats! Your 2 artworks are selected for the 2nd round. For qualifying for 2nd round you have to pay a minimal amount.
+
+Please pay ₹500 by this link: 
+https://dummy-payment-link.com`,
         mediaUrl: [selectedImages[0]]
       });
     }
