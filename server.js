@@ -117,10 +117,14 @@ app.post("/select-images", async (req, res) => {
       await client.messages.create({
         from: process.env.TWILIO_WHATSAPP_FROM,
         to: whatsappNumber,
-        body: `Congrats! Your 2 artworks are selected for the 2nd round. For qualifying for 2nd round you have to pay a minimal amount.
+        body: `🎉 Congratulations!
 
-Please pay ₹500 by this link: 
-https://dummy-payment-link.com`,
+Your 2 artworks have been selected for the exhibition.
+
+To confirm your participation, please complete the ₹500 registration.
+
+Payment Link:
+https://rzp.io/l/xyz123`,
         mediaUrl: [selectedImages[0]]
       });
     }
