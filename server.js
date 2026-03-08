@@ -117,14 +117,7 @@ app.post("/select-images", async (req, res) => {
       await client.messages.create({
         from: process.env.TWILIO_WHATSAPP_FROM,
         to: whatsappNumber,
-        body: `🎉 Congratulations!
-
-Your 2 artworks have been selected for the exhibition.
-
-To confirm your participation, please complete the ₹500 registration.
-
-Payment Link:
-https://google.com`,
+        body: "🎉 Congratulations!\n\nYour 2 artworks have been selected for the exhibition.\n\nTo confirm your participation, please complete the ₹500 registration.\n\nPayment Link:\nhttps://google.com",
         mediaUrl: [selectedImages[0]]
       });
     }
