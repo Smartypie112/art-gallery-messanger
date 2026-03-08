@@ -124,7 +124,7 @@ Your 2 artworks have been selected for the exhibition.
 To confirm your participation, please complete the ₹500 registration.
 
 Payment Link:
-https://rzp.io/l/xyz123`,
+https://google.com`,
         mediaUrl: [selectedImages[0]]
       });
     }
